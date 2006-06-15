@@ -1,5 +1,5 @@
 #
-# $Id: PurePerl.pm,v 1.3 2005/03/01 14:10:46 dave Exp $
+# $Id: PurePerl.pm,v 1.4 2006/06/15 20:14:14 dave Exp $
 #
 
 =head1 NAME
@@ -25,7 +25,7 @@ use Carp;
 
 use Ogg::Vorbis::Header::PurePerl;
 
-our $VERSION = sprintf "%d.%02d", '$Revision: 1.3 $ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = sprintf "%d.%02d", '$Revision: 1.4 $ ' =~ /(\d+)\.(\d+)/;
 
 my %data = (artist => 'artist',
             title  => 'title',
@@ -57,6 +57,13 @@ sub AUTOLOAD {
 
 1;
 __END__
+
+=head1 METHODS
+
+=head2 new
+
+Creates a new object of class AudioFile::Info::MP3::ID3Lib. Usually called
+by AudioFile::Info::new.
 
 =head1 AUTHOR
 
