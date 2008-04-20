@@ -1,5 +1,5 @@
 #
-# $Id: PurePerl.pm,v 1.4 2006/06/15 20:14:14 dave Exp $
+# $Id: PurePerl.pm 17 2008-04-20 16:03:59Z dave $
 #
 
 =head1 NAME
@@ -25,14 +25,14 @@ use Carp;
 
 use Ogg::Vorbis::Header::PurePerl;
 
-our $VERSION = sprintf "%d.%02d", '$Revision: 1.4 $ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = sprintf "%d", '$Revision: 17 $ ' =~ /(\d+)/;
 
-my %data = (artist => 'artist',
-            title  => 'title',
-            album  => 'album',
-            track  => 'tracknumber',
-            year   => 'date',
-            genre  => 'genre');
+my %data = (artist => 'ARTIST',
+            title  => 'TITLE',
+            album  => 'ALBUM',
+            track  => 'TRACKNUMBER',
+            year   => 'DATE',
+            genre  => 'GENRE');
 
 sub new {
   my $class = shift;
